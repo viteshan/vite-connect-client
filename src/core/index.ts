@@ -637,7 +637,7 @@ class Connector {
       event: "disconnect",
       params: [{ message }]
     });
-    this._socket.close();
+    // this._socket.close();  // bugfix
   }
 
   private _handleSessionResponse(
